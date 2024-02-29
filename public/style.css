@@ -1,0 +1,25 @@
+#body{
+    display: flex-box;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;   
+}
+#output{
+    display: flexbox;
+    height: 100px;
+    border: solid 1px black;
+    justify-self: center;
+    text-align: center;
+    margin: 16px 20rem;
+}
+#button{
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+#button:hover{
+    color: black;
+    background-color: white;
+    border: solid 1px grey;
+}

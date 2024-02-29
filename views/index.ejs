@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Get a Joke</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<main id="body">
+    <h1>Want to read a joke.</h1>
+    <p>Click on the button Below</p>
+    <div id="output">
+    <%if(locals.joke){%>
+        <p> <%= joke%> </p>
+   <%}else{%>
+        <p>Couldn't retrieve the Data</p>
+   <%}%> 
+    </div>
+    <form action="/generateJoke" method="get">
+    <button  id="button">Generate</button>
+    </form>
+    
+</main>
+</html>
